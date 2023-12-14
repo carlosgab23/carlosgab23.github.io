@@ -12,29 +12,26 @@
         <div>
             <br/>
             <h1><legend class="legend">Informacion del pedido</legend></h1>
-            <form action="">
-            <p>Nombre del Cliente:</p>
-            <input type="text" class="field" name="Nombre"> <br/>
+            <label>Nombre</label><br/>
+            <input type="text" name="Nombre" required placeholder="Nombre"/><br/>
+            
+            <label>ApeP</label><br/>
+            <input type="text" name="ApeP" required placeholder="Apellido paterno"/><br/>
+           
+            <label>Numero</label><br/>
+            <input type="text" name="Numero" required placeholder="Numero"/><br/>
+           
+            <label>producto</label><br/>
+            <input type="text" name="producto" required placeholder="Producto"/><br/>
+           
+            <label>codigo</label><br/>
+            <input type="text" name="codigo" required placeholder="Codigo de producto"/><br/>
 
-            <p>Apellido Paterno:</p>
-            <input type="text" class="field" name="ApeP"> <br/>
-
-            <p>Numero Telefonico:</p>
-            <input type="text" class="field" name="Numero"> <br/>
-
-            <p>Tipo de producto:</p>
-            <p>(Playera, sudadera)</p>
-            <input class="field" name="producto"> <br/>
-
-            <p>Codigo del producto</p>
-            <input class="field" name="codigo"> <br/><br/> 
-
-            <p>Talla (Ch,M,G,XL)</p>
-            <input class="field" name="talla"> <br/><br/> 
-    
-            <button type="submit">Guardar</button>	
-            </form>
-        </div>
-    </form>
+            <label>talla</label><br/>
+            <input type="text" name="talla" required placeholder="Talla"/><br/>
+            <button type="submit">Guardar"</button>	
+        </form>
+    </div>
+</form>
 </body>
 </html>
