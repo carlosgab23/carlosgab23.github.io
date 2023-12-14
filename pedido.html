@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pedido</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body style="background:#4AFFFA;">
+	<div class="img">
+        <img src="ka.jpeg">
+    </div>
+    <div>
+        <br/>
+        <h1><legend class="legend">Informacion del pedido</legend></h1>
+        <form action="">
+        <p>Nombre del Cliente:</p>
+        <input type="text" class="field" name="Nombre"> <br/>
+
+        <p>Apellido Paterno:</p>
+        <input type="text" class="field" name="ApeP"> <br/>
+
+        <p>Numero Telefonico:</p>
+        <input type="text" class="field" name="Numero"> <br/>
+
+        <p>Tipo de producto:</p>
+        <p>(Playera, sudadera)</p>
+        <input class="field" name="producto"> <br/>
+
+        <p>Codigo del producto</p>
+        <input class="field" name="codigo"> <br/><br/> 
+
+        <p>Talla (Ch,M,G,XL)</p>
+        <input class="field" name="talla"> <br/><br/> 
+    
+        <input class="button" type="button" onclick="push()" name="Regresar" value="Enviar Pedido"/>
+        <script>
+            function push(){
+                alert("Pedido enviado. Nos comunicaremos con usted a traves del numero telefonico proporcionado, sera redirigido a la pagina principal");
+                window.history.go(-1);
+            }
+        </script>	
+</form>
+    </div>
+</body>
+</html>
