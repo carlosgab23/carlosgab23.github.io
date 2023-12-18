@@ -5,36 +5,34 @@
 	<link rel="stylesheet" href="form.css">
 </head>
 <body style="background:#4AFFFA;">
-    <form action="conexion.php" method="POST">
 	    <div class="img">
             <img src="ka.jpeg">
         </div>
         <div>
             <br/>
             <h1><legend class="legend">Informacion del pedido</legend></h1>
-            <form action="">
+	<form action="conexion.php" method="POST">
             <p>Nombre del Cliente:</p>
-            <input type="text" class="field" name="Nombre"> <br/>
+            <input type="text" name="Nombre"> <br/>
 
             <p>Apellido Paterno:</p>
-            <input type="text" class="field" name="ApeP"> <br/>
+            <input type="text" name="ApeP"> <br/>
 
             <p>Numero Telefonico:</p>
-            <input type="text" class="field" name="Numero"> <br/>
+            <input type="text" name="Numero"> <br/>
 
             <p>Tipo de producto:</p>
             <p>(Playera, sudadera)</p>
-            <input class="field" name="producto"> <br/>
+            <input type="text" name="producto"> <br/>
 
             <p>Codigo del producto</p>
-            <input class="field" name="codigo"> <br/><br/> 
+            <input type="text" name="codigo"> <br/><br/> 
 
             <p>Talla (Ch,M,G,XL)</p>
-            <input class="field" name="talla"> <br/><br/> 
+            <input type="text" name="talla"> <br/><br/> 
     
-            <button type="submit">Guardar</button>	
+            <td><label><input type="submit" value="Enviar"></input></label></td>	
         </form>
     </div>
-</form>
 </body>
 </html>
